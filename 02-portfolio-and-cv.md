@@ -5,9 +5,9 @@
 4. Ganti teks sebelumnya dengan `"Hello world"`. **echo "Hello world" > README.md**
 5. Tampilkan isi teks tersebut pada command line menggunakan command `cat`. **cat README.md**
 6. Ternyata kamu tidak ingin perubahan tersebut, dan ingin kembali ke perubahan seperti commit yang terakhir. Lakukan teknik git backtracking untuk mengembalikan ke perubahan commit yang terakhir. **git checkout README.md**
-7. buat `branch` baru dengan nama `cv`, hal ini berguna agar histori kita tidak tercampur
-8. pindah `branch` ke dalam `cv`, kemudian buat file dengan nama `cv.txt` dan isi file tersebut dengan kalimat:<br>`"Ini adalah file CV"`
-9. kemudian simpan perubahan menggunakan `commit` dengan pesan<br>`"Initial CV"`
+7. buat `branch` baru dengan nama `cv`, hal ini berguna agar histori kita tidak tercampur. git branch cv
+8. pindah `branch` ke dalam `cv`, kemudian buat file dengan nama `cv.txt` dan isi file tersebut dengan kalimat:<br>`"Ini adalah file CV"`. <br>git checkout cv<br>echo "Ini adalah file CV" > cv.txt
+9. kemudian simpan perubahan menggunakan `commit` dengan pesan<br>`"Initial CV"`. <br>git add .<br>git commit -m "Initial CV"
 10. tambahkan **3 perusahaan** yang akan kamu lamar, dan setiap menuliskan 1 nama perusahaan kamu harus melakukan dokumentasi dan menyimpan perubahan menggunakan `commit`
 11. kembali ke `branch master`
 12. ubah file `README.md` menjadi
